@@ -27,15 +27,17 @@ end
 def play(songs_array)
   puts "Please enter a song name or number:"
   user_choice  = gets.chomp
-    songs_array.each_with_index do |title, i|
-  if user_choice == title
-    puts "Playing #{title}"
-  elsif user_choice.to_i == i + 1
-    puts "Playing #{title}"
+  if songs_array.include?(user_choice)
+    puts "Playing #{user_choice}"
+  elsif 0 < user_choice.to_i && user_choice.to_i < songs.length
+    puts "Playing #{songs_array[user_choice.to_i - 1]}"
   else
     puts "Invalid input, please try again"
-   end
   end
+end
+
+def exit_jukebox
+  puts "Goodbye"
 end
 
 list(songs)
