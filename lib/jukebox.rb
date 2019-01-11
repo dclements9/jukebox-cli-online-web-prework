@@ -29,7 +29,7 @@ def play(songs_array)
   user_choice  = gets.chomp
   if songs_array.include?(user_choice)
     puts "Playing #{user_choice}"
-  elsif 0 < user_choice.to_i && user_choice.to_i < songs_array.length
+  elsif 0 < user_choice.to_i && user_choice.to_i < (songs_array.length + 1)
     puts "Playing #{songs_array[user_choice.to_i - 1]}"
   else
     puts "Invalid input, please try again"
