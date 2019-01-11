@@ -60,3 +60,5 @@ def run(songs_array)
     exit_jukebox
   end
 end
+
+run(songs)
