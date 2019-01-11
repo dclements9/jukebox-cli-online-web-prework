@@ -24,5 +24,15 @@ def list(songs_array)
   end
 end
 
-help
-list(songs)
+def play(songs_array)
+  puts "Please enter a song name or number:"
+  user_choice  = gets.chomp
+    songs_array.each_with_index do |title, i|
+  if user_choice == title
+    puts "Playing #{title}"
+
+  else
+    puts "Invalid input, please try again"
+   end
+  end
+end
