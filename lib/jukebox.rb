@@ -43,7 +43,7 @@ end
 def run(songs_array)
   loop do
     puts "Please enter a command:"
-    input = gets.strip
+    input = gets.chomp
     case input
       when "list"
         list(songs_array)
