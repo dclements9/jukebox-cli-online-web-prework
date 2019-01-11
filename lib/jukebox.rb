@@ -38,5 +38,5 @@ def play(songs_array)
   end
 end
 
-
+list(songs)
 play(songs)
