@@ -30,7 +30,7 @@ def play(songs_array)
     songs_array.each_with_index do |title, i|
   if user_choice == title
     puts "Playing #{title}"
-  elsif user_choice.to_i == index + 1
+  elsif user_choice.to_i == i + 1
     puts "Playing #{title}"
   else
     puts "Invalid input, please try again"
