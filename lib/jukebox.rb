@@ -41,21 +41,22 @@ def exit_jukebox
 end
 
 def run(songs_array)
+
   help
     puts "Please enter a command:"
     input = gets.strip
+  while input != exit
     case input
       when "list"
-        list(songs)
+        list(songs_array)
       when "play"
-        play(songs)
+        play(songs_array)
       when "help"
         help
-      when "exit"
-        exit_jukebox
-        return
+    #  when "exit"
+    #    exit_jukebox
+      #return
+    end
+    exit_jukebox
   end
 end
-
-list(songs)
-play(songs)
