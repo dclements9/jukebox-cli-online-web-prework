@@ -41,7 +41,7 @@ def exit_jukebox
 end
 
 def run(songs_array)
-  loop do
+  #loop do
     puts "Please enter a command:"
     input = gets.chomp
     case input
