@@ -17,3 +17,5 @@ def help
         \n- play : lets you choose a song to play
         \n- exit : exits this program"
 end
+
+help
