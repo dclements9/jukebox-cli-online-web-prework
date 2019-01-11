@@ -23,3 +23,6 @@ def list(songs_array)
     puts "#{i+1}. #{title}"
   end
 end
+
+help
+list(songs)
