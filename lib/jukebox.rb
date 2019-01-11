@@ -18,4 +18,8 @@ def help
         \n- exit : exits this program"
 end
 
-help
+def list(songs_array)
+  songs_array.each_with_index do |title, i|
+    puts "#{i+1}. #{title}"
+  end
+end
