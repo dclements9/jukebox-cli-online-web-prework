@@ -41,11 +41,12 @@ def exit_jukebox
 end
 
 def run(songs_array)
-
+  input = ""
+while input != exit
   help
     puts "Please enter a command:"
     input = gets.strip
-  while input != exit
+
     case input
       when "list"
         list(songs_array)
